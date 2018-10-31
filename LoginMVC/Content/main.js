@@ -12,7 +12,7 @@
             url: 'RegisterUser',
             data: JSON.stringify(registerData),
             success: function (data) {
-                console.log("Login Successfull");
+                alert(`Registered Successfully : ${data.Id}!`)
             },
             contentType: "application/json",
             dataType: 'json'
@@ -33,7 +33,10 @@
             url: 'CheckLogin',
             data: JSON.stringify(loginData),
             success: function (data) {
-                console.log("Login Successfull");
+                if(data)
+                    alert(`Login Successfully`)
+                else 
+                    alert(`Login failed.! Try again`)
             },
             contentType: "application/json",
             dataType: 'json'
