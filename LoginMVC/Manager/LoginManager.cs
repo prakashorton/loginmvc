@@ -11,7 +11,7 @@ namespace LoginMVC.Manager
 
         public LoginManager()
         {
-            connstring = @"DataSource=HP;InitialCatalog=BloodFynder;IntegratedSecurity=True";
+            connstring = @"DataSource=HP;InitialCatalog=Register;IntegratedSecurity=True";
             conn = new SqlConnection(connstring);
         }
 
